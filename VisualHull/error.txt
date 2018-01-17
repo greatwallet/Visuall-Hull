@@ -1,0 +1,49 @@
+1>------ 已启动生成: 项目: VisualHull, 配置: Release x64 ------
+1>  main.cpp
+1>main.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+1>D:\Visual Studio 2015\VC\include\xstddef(239): error C2678: 二进制“<”: 没有找到接受“const Point”类型的左操作数的运算符(或没有可接受的转换)
+1>  D:\Visual Studio 2015\VC\include\system_error(436): note: 可能是“bool std::operator <(const std::error_condition &,const std::error_condition &) noexcept”
+1>  D:\Visual Studio 2015\VC\include\system_error(427): note: 或  “bool std::operator <(const std::error_code &,const std::error_code &) noexcept”
+1>  D:\Visual Studio 2015\VC\include\xstddef(239): note: 尝试匹配参数列表“(const Point, const Point)”时
+1>  D:\Visual Studio 2015\VC\include\xstddef(238): note: 编译类 模板 成员函数“bool std::less<_Kty>::operator ()(const _Ty &,const _Ty &) const”时
+1>          with
+1>          [
+1>              _Kty=Point,
+1>              _Ty=Point
+1>          ]
+1>  D:\Visual Studio 2015\VC\include\xhash(82): note: 参见对正在编译的函数 模板 实例化“bool std::less<_Kty>::operator ()(const _Ty &,const _Ty &) const”的引用
+1>          with
+1>          [
+1>              _Kty=Point,
+1>              _Ty=Point
+1>          ]
+1>  D:\Visual Studio 2015\VC\include\xhash(85): note: 参见对正在编译的类 模板 实例化“std::less<_Kty>”的引用
+1>          with
+1>          [
+1>              _Kty=Point
+1>          ]
+1>  D:\Visual Studio 2015\VC\include\hash_set(40): note: 参见对正在编译的类 模板 实例化“stdext::hash_compare<_Kty,std::less<_Kty>>”的引用
+1>          with
+1>          [
+1>              _Kty=Point
+1>          ]
+1>  D:\Visual Studio 2015\VC\include\xhash(152): note: 参见对正在编译的类 模板 实例化“stdext::_Hset_traits<_Kty,_Tr,_Alloc,false>”的引用
+1>          with
+1>          [
+1>              _Kty=Point,
+1>              _Tr=stdext::hash_compare<Point,std::less<Point>>,
+1>              _Alloc=std::allocator<Point>
+1>          ]
+1>  D:\Visual Studio 2015\VC\include\hash_set(89): note: 参见对正在编译的类 模板 实例化“std::_Hash<stdext::_Hset_traits<_Kty,_Tr,_Alloc,false>>”的引用
+1>          with
+1>          [
+1>              _Kty=Point,
+1>              _Tr=stdext::hash_compare<Point,std::less<Point>>,
+1>              _Alloc=std::allocator<Point>
+1>          ]
+1>  main.cpp(301): note: 参见对正在编译的类 模板 实例化“stdext::hash_set<Point,stdext::hash_compare<_Kty,std::less<_Kty>>,std::allocator<_Kty>>”的引用
+1>          with
+1>          [
+1>              _Kty=Point
+1>          ]
+========== 生成: 成功 0 个，失败 1 个，最新 0 个，跳过 0 个 ==========
